@@ -18,7 +18,7 @@ export function getAccessoryIcon(type: string) {
       return Force;
     case "gasoline_motor":
       return Gasoline;
-    case "eletric_motor":
+    case "electric_motor":
       return Energy;
     case "hybrid_motor":
       return Hybrid;
