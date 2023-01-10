@@ -25,7 +25,7 @@ import Animated, {
 const ButtonAnimated = Animated.createAnimatedComponent(TouchableOpacity);
 
 import api from "../../services/api";
-import { Load } from "../../components/Load";
+import { LoadAnimation } from "../../components/LoadAnimation";
 import { useTheme } from "styled-components";
 
 export function Home() {
@@ -89,7 +89,7 @@ export function Home() {
         </HeaderContent>
       </Header>
       {loading ? (
-        <Load />
+        <LoadAnimation />
       ) : (
         <CarList
           data={cars}

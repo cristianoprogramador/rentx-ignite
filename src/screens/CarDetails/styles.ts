@@ -14,7 +14,7 @@ export const Header = styled.TouchableOpacity`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  z-index: 9999;
   position: absolute;
   margin-top: ${getStatusBarHeight() + 18}px;
   margin-left: 24px;
