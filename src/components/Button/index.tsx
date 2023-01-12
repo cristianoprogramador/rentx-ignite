@@ -2,12 +2,11 @@ import React from "react";
 import { ActivityIndicator } from "react-native";
 import { Container, Title } from "./styles";
 import { useTheme } from "styled-components";
+import { TouchableOpacityProps } from "react-native";
 
-interface Props {
+interface Props extends TouchableOpacityProps {
   title: string;
   color?: string;
-  onPress: () => void;
-  disabled?: boolean;
   loading?: boolean;
   light?: boolean;
 }
