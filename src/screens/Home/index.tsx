@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { StatusBar, StyleSheet, BackHandler } from "react-native";
+import { StatusBar, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import {
   CarList,
@@ -69,12 +69,6 @@ export function Home() {
     fetchCars();
   }, []);
 
-  useEffect(() => {
-    BackHandler.addEventListener("hardwareBackPress", () => {
-      return true;
-    });
-  }, []);
-
   return (
     <Container>
       <StatusBar
@@ -100,7 +94,7 @@ export function Home() {
         />
       )}
 
-      <Animated.View
+      {/* <Animated.View
         style={[
           myCarsButtonStyle,
           {
@@ -116,17 +110,17 @@ export function Home() {
         >
           <Ionicons name="ios-car-sport" size={32} color={theme.colors.shape} />
         </ButtonAnimated>
-      </Animated.View>
+      </Animated.View> */}
     </Container>
   );
 }
 
-const styles = StyleSheet.create({
-  button: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+// const styles = StyleSheet.create({
+//   button: {
+//     width: 60,
+//     height: 60,
+//     borderRadius: 30,
+//     justifyContent: "center",
+//     alignItems: "center",
+//   },
+// });

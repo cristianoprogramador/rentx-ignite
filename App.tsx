@@ -10,6 +10,7 @@ import {
 } from "@expo-google-fonts/inter";
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { AppProvider } from "./src/hooks";
 import { Routes } from "./src/routes";
 import theme from "./src/styles/theme";
 
@@ -28,7 +29,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Routes />
+      <AppProvider>
+        <Routes />
+      </AppProvider>
     </ThemeProvider>
   );
 }

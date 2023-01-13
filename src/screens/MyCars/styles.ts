@@ -17,6 +17,11 @@ export const Header = styled.View`
   padding: 25px;
 `;
 
+export const ViewButton = styled.View`
+  flex: 1;
+  margin-top: 40px;
+`;
+
 export const Title = styled.Text`
   font-size: ${RFValue(30)}px;
   color: ${({ theme }) => theme.colors.shape};

@@ -19,6 +19,7 @@ import {
   CarFooterTitle,
   CarFooterPeriod,
   CarFooterDate,
+  ViewButton,
 } from "./styles";
 import { useTheme } from "styled-components";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -67,7 +68,9 @@ export function MyCars() {
           translucent
           backgroundColor="transparent"
         />
-        <BackButton onPress={handleBack} color={theme.colors.shape} />
+        <ViewButton>
+          <BackButton onPress={handleBack} color={theme.colors.shape} />
+        </ViewButton>
 
         <Title>
           Escolha uma {"\n"}data de início e {"\n"}fim do aluguel
